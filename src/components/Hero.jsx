@@ -119,7 +119,7 @@ const Hero = () => {
             </VideoPreview>
           </div>
 
-          {<video
+          <video
             ref={nextVdRef}
             src={getVideoSrc(currentIndex)}
             loop
@@ -127,7 +127,7 @@ const Hero = () => {
             id="next-video"
             className="absolute-center invisible absolute z-20 size-64 object-cover object-center"
             onLoadedData={handleVideoLoad}
-          />}
+          />
           <video
             src={getVideoSrc(
               currentIndex === totalVideos - 1 ? 1 : currentIndex
